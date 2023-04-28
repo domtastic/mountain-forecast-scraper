@@ -13,6 +13,7 @@ import { scrape } from './mountainForecast.js';
     } catch (err) {
         console.log('Error sending forecast: ', err);
     }
+    process.exit();
 })();
 
 
