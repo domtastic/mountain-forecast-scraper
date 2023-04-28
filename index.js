@@ -1,4 +1,4 @@
-import puppeteer from 'puppeteer';
+const puppeteer = require('puppeteer');
 
 async function sendMessage(messages) {
     const browser = await puppeteer.launch();
@@ -143,4 +143,5 @@ async function scrape(page, click) {
     return data;
 }
 
-getForecast();
+exports.getForecast = getForecast;
+
